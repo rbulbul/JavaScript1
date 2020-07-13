@@ -1,4 +1,5 @@
 //  === EXERCISE 5 : Round a number and log it ===
+'use strict';
 
 var z = 7.25;
 console.log(z);

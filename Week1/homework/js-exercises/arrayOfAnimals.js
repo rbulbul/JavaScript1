@@ -1,4 +1,5 @@
 //  === EXERCISE 6 : Log an array of animals ===
+'use strict';
 
 var items = [];
 console.log(' Assign empty list value to animals');

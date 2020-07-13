@@ -1,4 +1,5 @@
 //  === EXERCISE 10 : Compare Arrays ===
+'use strict';
 
 var firstArr = [
   'Hello World!',

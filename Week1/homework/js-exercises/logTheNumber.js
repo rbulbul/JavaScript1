@@ -1,4 +1,5 @@
 //  === EXERCISE 3 : Log the number ===
+'use strict';
 
 var numberX;
 console.log(

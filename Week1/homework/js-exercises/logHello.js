@@ -1,4 +1,5 @@
 //  === EXERCISE 1 : Hello World! ===
+'use strict';
 
 console.log('Hello World!');
 console.log('Hallo Wereld');

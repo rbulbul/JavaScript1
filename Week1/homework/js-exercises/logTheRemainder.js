@@ -1,4 +1,5 @@
 //  === EXERCISE 9 : Log the Remainder ===
+'use strict';
 
 var x = 7;
 x = x % 3;

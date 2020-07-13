@@ -1,4 +1,5 @@
 //  === EXERCISE 8 : Type checker ===
+'use strict';
 
 function typeCheckers(arg1, arg2) {
   var a = typeof arg1;
