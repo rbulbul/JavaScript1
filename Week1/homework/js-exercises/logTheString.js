@@ -1,7 +1,7 @@
 //  === EXERCISE 4 : Log the string ===
 'use strict';
 
-var myString = 'Ramazan Bulbul';
+let myString = 'Ramazan Bulbul';
 console.log('It will print out my name');
 console.log(myString);
 myString = 'Yusuf';

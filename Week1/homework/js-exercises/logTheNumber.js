@@ -1,7 +1,7 @@
 //  === EXERCISE 3 : Log the number ===
 'use strict';
 
-var numberX;
+let numberX;
 console.log(
   'It will be "undefined" beacuse we didn\'t initialize a value to variable ',
 );

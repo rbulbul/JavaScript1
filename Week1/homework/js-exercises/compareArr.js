@@ -1,13 +1,13 @@
 //  === EXERCISE 10 : Compare Arrays ===
 'use strict';
 
-var firstArr = [
+let firstArr = [
   'Hello World!',
-  'The Meaning of life: ',
+  'The Meaning of life:',
   '42',
   'This is awesome!',
 ];
-var secondArr = [
+let secondArr = [
   'hello',
   123,
   true,
@@ -20,7 +20,7 @@ var secondArr = [
 console.log('The length of the array is' + ' ' + firstArr.length); // output is 4
 console.log('The length of the array is' + ' ' + secondArr.length); // output is 7
 
-if (firstArr.length == secondArr.length) {
+if (firstArr.length === secondArr.length) {
   console.log('They are the same!');
 } else {
   console.log('Two different sizes');

@@ -1,12 +1,12 @@
 //  === EXERCISE 5 : Round a number and log it ===
 'use strict';
 
-var z = 7.25;
+let z = 7.25;
 console.log(z);
-var a = Math.round(z);
+let a = Math.round(z);
 console.log(a);
 
-var highest;
+let highest;
 if (a > z) {
   highest = a;
 } else {

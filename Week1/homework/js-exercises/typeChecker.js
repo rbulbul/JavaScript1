@@ -2,10 +2,10 @@
 'use strict';
 
 function typeCheckers(arg1, arg2) {
-  var a = typeof arg1;
-  var b = typeof arg2;
+  /*   let a = typeof arg1;
+  let b = typeof arg2; */
 
-  if (a === b) {
+  if (typeof arg1 === typeof arg2) {
     console.log('SAME TYPE');
   } else {
     console.log('Not the same...');
@@ -15,10 +15,14 @@ function typeCheckers(arg1, arg2) {
 /* typeCheckers('Ramazan', 'ali');
 typeCheckers('Ramazan', 5); */
 
-var myFirstObj = { type: 'Fiat' };
-var mySecondObj = { model: '500' };
-var myFirstStr = 'Ramazan';
-var mySecondStr = 'Bulbul';
+let myFirstObj = { type: 'Fiat' };
+let mySecondObj = { model: '500' };
+let myFirstStr = 'Ramazan';
+let mySecondStr = 'Bulbul';
 
+typeCheckers(myFirstObj, mySecondObj);
+typeCheckers(myFirstObj, myFirstStr);
+typeCheckers(myFirstObj, myFirstStr);
 typeCheckers(myFirstObj, mySecondStr);
-typeCheckers(myFirstStr, mySecondObj);
+typeCheckers(mySecondObj, myFirstStr);
+typeCheckers(myFirstStr, mySecondStr);

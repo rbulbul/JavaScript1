@@ -1,11 +1,11 @@
 //  === EXERCISE 6 : Log an array of animals ===
 'use strict';
 
-var items = [];
+let items = [];
 console.log(' Assign empty list value to animals');
 console.log(items);
 
-var animals = ['Parot', 'Hipo', 'Cat'];
-console.log(animals);
+let animals = ['Parot', 'Hipo', 'Cat'];
+console.log(animals[1]);
 animals.push('Piglet');
-console.log(animals);
+console.log(animals[1]);
