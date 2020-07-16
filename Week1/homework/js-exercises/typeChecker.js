@@ -22,7 +22,7 @@ let mySecondStr = 'Bulbul';
 
 typeCheckers(myFirstObj, mySecondObj);
 typeCheckers(myFirstObj, myFirstStr);
-typeCheckers(myFirstObj, myFirstStr);
 typeCheckers(myFirstObj, mySecondStr);
 typeCheckers(mySecondObj, myFirstStr);
+typeCheckers(mySecondObj, mySecondStr);
 typeCheckers(myFirstStr, mySecondStr);
