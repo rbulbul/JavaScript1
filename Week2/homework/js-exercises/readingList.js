@@ -1,7 +1,9 @@
+'use strict';
+
 let readingMaterial = [
   { title: 'Zahir', author: 'Paulo Coelho', alreadyRead: true },
-  { title: 'Zahir', author: 'Paulo Coelho', alreadyRead: false },
-  { title: 'Zahir', author: 'Paulo Coelho', alreadyRead: true },
+  { title: 'The Outsider', author: 'Stephen King', alreadyRead: false },
+  { title: 'Alchemist', author: 'Paulo Coelho', alreadyRead: true },
 ];
 
 for (let books of readingMaterial) {
