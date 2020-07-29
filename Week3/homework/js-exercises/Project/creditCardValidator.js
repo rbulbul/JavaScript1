@@ -19,7 +19,7 @@ const numChecker = (cardNumber) => {
   if (selectNumber.length !== newArray.length) {
     return `Error: INVALID Card Number! All characters must be numbers!`;
   } else if (selectNumber[selectNumber.length - 1] % 2 !== 0) {
-    return `Final digit of the card number must be even.`;
+    return `Error: INVALID Card Number! Final digit of the card number must be even!`;
   } else {
     // The sum of all the numbers must be greater than 16
     let total = 0;
@@ -27,7 +27,7 @@ const numChecker = (cardNumber) => {
       total += selectNumber[i];
     }
     if (total <= 16) {
-      return `The sum of all the digits must be greater than 16`;
+      return `Error: INVALID Card Number! The sum of all the digits must be greater than 16!`;
     }
   }
 
@@ -60,7 +60,7 @@ const validateCreditCardNumber = (cardNumber) => {
 
 console.log(validateCreditCardNumber('1234567890123456')); // TRUE
 console.log(validateCreditCardNumber('12345678901234567')); // Error: must be 16 digits.
-console.log(validateCreditCardNumber('12345s7890m123d5')); // Error: all of the digits must be numbers.
-console.log(validateCreditCardNumber('2222222222222222')); // Error: Digits cannot be the same.
-console.log(validateCreditCardNumber('7575757575757575')); // Error: Card Number must be even.
+console.log(validateCreditCardNumber('a92332119c011112')); // Error: all of the digits must be numbers.
+console.log(validateCreditCardNumber('4444444444444444')); // Error: Digits cannot be the same.
+console.log(validateCreditCardNumber('6666666666666661')); // Error: Card Number must be even.
 console.log(validateCreditCardNumber('1111111111111110')); // Error: The sum of digits must be greater than 16.
