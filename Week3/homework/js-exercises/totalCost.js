@@ -7,15 +7,6 @@ let cartForParty = {
   beef: 6.99,
 };
 
-/* const calculateTotalPrice = (shoppingCart) => {
-  let total = 0;
-  for (let item = 0; item < shoppingCart.length; item++) {
-    total += shoppingCart[item];
-  }
-  return total;
-};
- */
-
 const calculateTotalPrice = (shoppingCart) => {
   let total = 0;
   for (let item in shoppingCart) {

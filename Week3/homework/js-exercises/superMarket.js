@@ -1,4 +1,5 @@
 'use strict';
+
 let shoppingCart = ['bananas', 'milk'];
 const addToShoppingCart = (item) => {
   shoppingCart.push(item);
@@ -7,6 +8,7 @@ const addToShoppingCart = (item) => {
   }
   return `You bought ${shoppingCart[0]}, ${shoppingCart[1]}, ${shoppingCart[2]} !`;
 };
+
 console.log(addToShoppingCart('chocolate')); // Returns "You bought bananas, milk, chocolate!"
 console.log(addToShoppingCart('waffles')); // Returns "You bought bananas, milk, chocolate!" */
 console.log(addToShoppingCart('tea')); // Returns "You bought bananas, milk, chocolate!" */
