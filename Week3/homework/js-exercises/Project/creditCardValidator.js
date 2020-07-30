@@ -65,7 +65,7 @@ const validateCreditCardNumber = (cardNumber) => {
 
 console.log(validateCreditCardNumber('1234567890123456')); // TRUE
 console.log(validateCreditCardNumber('12345678901234567')); // Error: must be 16 digits.
-console.log(validateCreditCardNumber('2222222222222224')); // Error: all of the digits must be numbers.
+console.log(validateCreditCardNumber('a92332119c011112')); // Error: all of the digits must be numbers.
 console.log(validateCreditCardNumber('4444444444444444')); // Error: Digits cannot be the same.
 console.log(validateCreditCardNumber('6666666666666661')); // Error: Card Number must be even.
 console.log(validateCreditCardNumber('1111111111111110')); // Error: The sum of digits must be greater than 16.
