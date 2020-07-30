@@ -2,11 +2,13 @@
 
 // This is the number checker function
 const numChecker = (cardNumber) => {
+  // Create array separate the string
   let newArray = [];
   for (let i = 0; i < cardNumber.length; i++) {
     newArray.push(cardNumber[i]);
   }
 
+  // Return string to number
   let convertToNumber = newArray.map((item) => {
     return parseInt(item, 10);
   });
@@ -16,6 +18,7 @@ const numChecker = (cardNumber) => {
     return !Number.isNaN(number);
   });
 
+  // Here if the length of selectNumber and newArray is equal to each other, then its valid. Otherwise it means some of them are NaN
   if (selectNumber.length !== newArray.length) {
     return `Error: INVALID Card Number! All characters must be numbers!`;
   } else if (selectNumber[selectNumber.length - 1] % 2 !== 0) {
@@ -23,7 +26,9 @@ const numChecker = (cardNumber) => {
   } else {
     // The sum of all the numbers must be greater than 16
     let total = 0;
-    for (let i of selectNumber) {
+    // for (let i of selectNumber) : When I used this loop method to check this '1111111111111114', total was not calculated. Why?
+    // So I need to changed classic way of For loop
+    for (let i = 0; i < selectNumber.length; i++) {
       total += selectNumber[i];
     }
     if (total <= 16) {
@@ -60,7 +65,7 @@ const validateCreditCardNumber = (cardNumber) => {
 
 console.log(validateCreditCardNumber('1234567890123456')); // TRUE
 console.log(validateCreditCardNumber('12345678901234567')); // Error: must be 16 digits.
-console.log(validateCreditCardNumber('a92332119c011112')); // Error: all of the digits must be numbers.
+console.log(validateCreditCardNumber('2222222222222224')); // Error: all of the digits must be numbers.
 console.log(validateCreditCardNumber('4444444444444444')); // Error: Digits cannot be the same.
 console.log(validateCreditCardNumber('6666666666666661')); // Error: Card Number must be even.
 console.log(validateCreditCardNumber('1111111111111110')); // Error: The sum of digits must be greater than 16.
